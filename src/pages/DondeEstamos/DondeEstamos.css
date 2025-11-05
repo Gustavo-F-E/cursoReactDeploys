@@ -1,0 +1,71 @@
+
+
+.DondeEstamos-page {
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px; 
+}
+
+.DondeEstamos-page h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.donde-estamos-content {
+    display: flex; 
+    gap: 30px; 
+    align-items: flex-start; 
+    margin-top: 20px;
+}
+
+.DondeEstamos-page img {
+
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.DondeEstamos-page iframe {
+
+    width: 100%; 
+    height: 450px;
+    border-radius: 8px;
+}
+
+
+.info-section {
+    flex: 1; 
+    min-width: 300px; 
+    text-align: left;
+}
+
+.info-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.info-section img {
+    margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+    .donde-estamos-content {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .info-section,
+    .DondeEstamos-page iframe {
+        min-width: unset; 
+        width: 100%;
+    }
+
+    .info-section {
+        order: -1; 
+    }
+}

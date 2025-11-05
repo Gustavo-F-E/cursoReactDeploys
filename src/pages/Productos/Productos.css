@@ -1,0 +1,13 @@
+.productos-page {
+    padding: 40px 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    font-family: sans-serif; 
+}
+
+
+.productos-page h1{
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}

@@ -1,0 +1,118 @@
+
+
+.servicios-page {
+    padding: 40px 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    font-family: sans-serif; 
+}
+
+.servicios-page h1 {
+    text-align: center;
+    color: #2c3e50; 
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%; 
+}
+
+.servicios-article:first-of-type {
+    background-color: #f4f7f9; 
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.servicios-article:first-of-type ul {
+    list-style: none;
+    display: flex; 
+    justify-content: space-around; 
+    gap: 15px;
+    padding: 0;
+}
+
+.servicios-article:first-of-type li {
+    flex: 1; /* Permite que cada ítem tome un espacio igual */n: center;
+}
+
+.servicios-article:first-of-type a {
+    text-decoration: none;
+    color: #3498db; 
+    font-weight: bold;
+    padding: 10px 5px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+
+.servicios-article:first-of-type a:hover {
+    color: #ffffff;
+    background-color: #3498db; 
+}
+
+.servicios-article {
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+
+.servicios-article:last-of-type {
+    border-bottom: none; 
+}
+
+.servicios-article h2 {
+    color: #2c3e50; 
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.servicios-article p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.servicios-article img {
+    max-width: 20vw; 
+    height: auto;
+    border-radius: 50%;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#vacunacion img {
+    width: 45%; 
+    display: inline-block;
+    margin-right: 20%;
+}
+
+/* Asegurarse de que el último elemento de vacunación no tenga margen derecho */
+#vacunacion img:last-child {
+    margin-right: 0;
+    border-radius:0%;
+    max-width: 40vw; 
+}
+
+@media (max-width: 768px) {
+    .servicios-page {
+        padding: 20px 10px;
+    }
+
+    .servicios-article:first-of-type ul {
+        flex-direction: column; /* Apila los ítems del menú en móvil */
+    }
+    
+    .servicios-article:first-of-type li {
+        margin-bottom: 5px;
+    }
+
+    #vacunacion img {
+        width: 100%; /* Vuelve a tomar ancho completo en móvil */
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

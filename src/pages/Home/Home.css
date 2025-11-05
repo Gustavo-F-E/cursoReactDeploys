@@ -1,0 +1,29 @@
+.home-page {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  top:0;
+}
+.home-contenedor-video{
+  height: 100vh;
+  position: relative;
+}
+
+.home-video {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit:contain;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    position: relative;
+    padding: 1rem 1rem 6rem 1rem;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,50 @@
+npm create vite@latest
+  y
+  curso_react
+  React
+  JavaScript
+  No
+  Yes
+
+Comandos utiles:
+cd ..
+cd cursoReact
+npm run dev
+npm install -g serve
+npm run build
+serve -s dist
+npm install
+
+Comandos Git:
+git init
+git add .
+git commit -m "clase 1"
+git branch -M main
+git remote add origin https://github.com/Gustavo-F-E/cursoReact.git
+git push -u origin main
+
+cd ..
+git add .
+git commit -m "clase 2"
+git push -u origin main
+cd cursoReact
+
+git clone https://github.com/Belen-Romero/reactjs-c25232.git
+git checkout <commit_hash>
+cd reactjs-c25232
+
+$ git log --oneline
+678bd7b (HEAD -> main, origin/main, origin/HEAD) Se agrega link a home
+c8f45ab Clase 7: Navegacion
+5a6d3fe Clase 5-6: useEffect y detalle de producto
+c783af2 Clase 4: estados y eventos
+b309178 Componentes clase 3
+5f93087 Componentes clase 3
+1ac52a8 clase 2: componentes y props
+
+git checkout '1ac52a8'
+git diff --name-only 678bd7b c8f45ab
+
+Estilos:
+npm install bootstrap
+

@@ -1,0 +1,61 @@
+.nosotros-page{
+    display: grid;
+    justify-items: center; /* Centra horizontalmente todos los items */
+    align-items: center; /* Centra verticalmente los items en sus celdas */
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    /* Las filas se ajustarán automáticamente al contenido */
+    grid-template-rows: 5rem 1fr 1fr 1fr 1fr 1fr;
+    /* Usamos min-height y calc para ajustar la altura al espacio disponible
+       restando la altura del header (5rem) y el footer (3rem) */
+    min-height: calc(100vh - 5rem - 3rem);
+    padding: 40px 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    font-family: sans-serif; 
+}
+
+.nosotros-page > h1 {
+    grid-column: 1 / -1; /* Ocupa todas las columnas */
+    justify-self: center; /* Centra el h1 horizontalmente */
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.nosotros-page > img {
+    grid-row: 2 / span 5; /* Empieza en la fila 2 y ocupa 2 filas */
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* justify-self ya no es necesario gracias a justify-items en el contenedor */
+}
+
+.nosotros-page > p {
+    font-size: 1.5rem; 
+    text-align: left; 
+    padding: 0 3rem; 
+    text-align: center; 
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .nosotros-page {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: auto; /* Filas automáticas */
+        padding: 20px 10px;
+    }
+
+    .nosotros-page > img {
+        grid-row: 2; /* Imagen en la fila 2 */
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .nosotros-page > p {
+        font-size: 1.2rem; 
+        padding: 0 1rem; 
+    }
+}
