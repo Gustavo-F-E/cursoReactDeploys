@@ -18,6 +18,7 @@ export const ItemDetail = ({ detail }) => {
       <Count
         btnText={"Agregar al carrito"}
         onConfirm={handleAdd}
+        productId={detail.id}
       />
       {/* <button onClick={()=>addItem(detail)}>Enviar al carrito</button> */}
     </Item>

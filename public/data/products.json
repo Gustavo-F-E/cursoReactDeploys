@@ -3,24 +3,24 @@
         "id": "1",
         "name": "Royal Canin",
         "price": 4500,
-        "category": "dulce",
+        "category": "perros",
         "description": "Adulto mordida media.",
-        "imageUrl": "/images/156157-removebg-preview.png"
+        "imageUrl": "https://i.ibb.co/MxTS2DqS/156157-removebg-preview.png"
     },
     {
         "id": "2",
         "name": "Old Prince",
         "price": 3200,
-        "category": "salado",
+        "category": "perros",
         "description": "Cordero Adulto Medio.",
-        "imageUrl": "/images/old-prince-cordero-removebg-preview.png"
+        "imageUrl": "https://i.ibb.co/szHvDBx/old-prince-cordero-removebg-preview.png"
     },
     {
         "id": "3",
         "name": "Purina",
-        "category": "dulce",
+        "category": "gatos",
         "price": 1200,
         "description": "Pollo adulto.",
-        "imageUrl": "/images/cats_proplan.png"
+        "imageUrl": "https://i.ibb.co/QvvfjT2L/cats-proplan.png"
     }
 ]

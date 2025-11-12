@@ -1,0 +1,50 @@
+import "./Login.css";
+import {useState} from "react";
+import {useAuthContext} from "../../context/AuthContext/useAuthContext";
+import {useNavigate, Navigate} from "react-router-dom";
+
+export const Login = () => {
+    const [userForm, setUserForm] = useState({
+        name: "",
+        password: ""
+    });
+
+    const {user, login} = useAuthContext();
+
+    const navigate = useNavigate();
+
+    if(user){
+        return <Navigate to="/admin/alta-productos"/>;
+    }
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        setUserForm({...userForm, [name]: value});
+    }; 
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const success = login(userForm.name, userForm.password);
+        if (success){navigate("/admin/alta-productos");}
+        else {alert ("Credenciales incorrectas");
+            setUserForm({name: "", password: ""});
+        }
+        
+    }
+
+    return (
+        <form className="login-form" onSubmit={handleSubmit}>
+            <h2>Iniciar Sesión</h2>
+            <div>
+                <label>Nombre de Usuario:</label> 
+                <input type="text" name="name" value={userForm.name} onChange={handleChange} required/> 
+            </div>
+            <div>
+                <label>Contraseña:</label> 
+                <input type="password" name="password" value={userForm.password} onChange={handleChange} required/> 
+            </div>
+            <div>
+            <button className="btn login" type="submit">Iniciar Sesión</button>
+            </div>
+        </form>
+    );
+}

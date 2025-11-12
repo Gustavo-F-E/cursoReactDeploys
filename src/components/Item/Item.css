@@ -3,18 +3,19 @@
   border: 1px solid #e0e0e0;
   border-radius: 0.5rem;
   padding: 1rem;
-  max-width: 15.625rem;
+
   height: 100%;
   /* 250px */
   color: #333333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 0 auto;
 }
 
 .product-item img {
   width: 100%;
-  height: auto;
-  /* mantiene proporción */
+  height: 200px; /* altura fija */
+  object-fit: contain; /* mantiene proporción y se asegura que la imagen completa sea visible */
   display: block;
   border-radius: 0.25rem;
   margin-bottom: 1rem;
